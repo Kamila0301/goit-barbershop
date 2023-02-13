@@ -22,6 +22,8 @@ body {
 }
 
 .btn {
+  width: 160px;
+  height: 40px;
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -29,6 +31,19 @@ body {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer;
+  border: 1px solid #FF6C00;
+  background-color: transparent;
+  border-radius: 25px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid transparent;
+  align-items: center;
 }
 
 .title {
@@ -63,15 +78,27 @@ body {
 /* Header */
 
 .header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-container {
+  display: flex;
 }
 
 .header-navigation {
+   display: flex;
+   align-items: center;
+   margin-right: auto;
 }
 
 .header-logo {
+  margin-right: 130px;
 }
 
 .header-list {
+   display: flex;
+   gap: 30px;
 }
 
 .header-item {
@@ -98,6 +125,7 @@ body {
   text-transform: uppercase;
   color: var(--main-title-color);
   background-color: black;
+  margin-right: 30px;
 }
 
 .header-btn {
@@ -115,10 +143,20 @@ body {
 }
 
 .hero {
-  background-color: var(--main-black-color);
+}
+
+.hero-container {
+  display: flex;
+}
+
+.hero-wrap {
+  background-color: var(--main-title-color);
+  flex-grow: 1;
+  padding: 272px 100px 208px;
 }
 
 .hero-list {
+   width: 100px;
 }
 
 .hero-item {
@@ -157,14 +195,30 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--main-black-color);
+  max-width: 360px;
 }
 
 /* About */
 
 .about {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
+
 .about-list {
+  display: flex;
+  gap: 30px;
 }
+
+.about-wrap {
+  max-width: 470px;
+}
+
+.about-container{
+  display: flex;
+  gap: 30px;
+}
+
 .list {
 }
 .about-item {
@@ -204,17 +258,30 @@ body {
 
 .prices {
   background-color: #303030;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.prices-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
 }
 
 .prices-pre-title {
   color: var(--grey-color);
+  margin-bottom: 20px;
 }
 
 .prices-title {
   color: var(--main-title-color);
+  margin-bottom: 44px;
 }
 
 .prices-list {
+  border: 1px;
+  padding: 30px 30px;
+  width: calc((100% - 30px) / 2);
 }
 
 .list {
@@ -222,6 +289,8 @@ body {
 }
 
 .prices-item {
+  display: flex;
+  justify-content: space-between;
 }
 
 .prices-item-text {
@@ -233,6 +302,8 @@ body {
 
 .prices-btn {
   color: var(--main-title-color);
+  display: block;
+  margin: 0 auto;
 }
 
 /* Benefits */
@@ -297,11 +368,19 @@ body {
 }
 
 .barbers-list {
+  display: flex;
+  gap: 30px;
 }
+
+.barbers-item-wrap {
+  padding-top: 30px;
+}
+
 .list {
 }
 
 .barbers-item {
+  width: calc((100% - 60px) / 3);
 }
 
 .barbers-item-title {
@@ -311,6 +390,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--main-black-color);
+  margin-bottom: 8px;
 }
 
 .barbers-item-text {
@@ -322,17 +402,27 @@ body {
 }
 
 .gallery {
+  padding-top: 120px;
+  margin-bottom: 120px;
 }
+
 .gallery-pre-title {
   color: var(--main-black-color);
+  margin-bottom: 44px;
 }
 
 .pre-title {
 }
 
 .gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 50px;
 }
+
 .list {
 }
 .gallery-item {
+  width: calc((100% - 90px) / 4);
 }

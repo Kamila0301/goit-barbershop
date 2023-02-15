@@ -7,10 +7,30 @@
   --grey-black-color: #555555;
 }
 
+p, 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
+  box-sizing: border-box;
 }
 
 .link {
@@ -188,6 +208,7 @@ body {
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--main-title-color);
+  margin-bottom: 20px;
 }
 
 .hero-after-title {
@@ -226,6 +247,7 @@ body {
 
 .about-pre-title {
   color: var(--main-black-color);
+  margin-bottom: 20px;
 }
 
 .about-title {
@@ -234,6 +256,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.05em;
   color: var(--main-black-color);
+  margin-bottom: 20px;
 }
 
 .about-after-title {
@@ -241,6 +264,7 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--grey-black-color);
+  margin-bottom: 20px;
 }
 
 .about-text {
@@ -248,6 +272,7 @@ body {
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: var(--grey-black-color);
+  margin-bottom: 42px;
 }
 
 .about-btn {
@@ -280,7 +305,7 @@ body {
 
 .prices-list {
   border: 1px;
-  padding: 30px 30px;
+  padding: 30px 20px;
   width: calc((100% - 30px) / 2);
 }
 
@@ -309,17 +334,27 @@ body {
 /* Benefits */
 
 .benefits {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .benefits-list {
 }
 .list {
 }
 
-.benefits-item span {
+.benefits-item {
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+  border: 1px solid;
+}
+
+.benefits-item > span {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.4;
   text-align: center;
+  display: block;
   letter-spacing: 0.05em;
   color: var(--main-black-color);
 }
@@ -334,11 +369,14 @@ body {
 
 .benefits-pre-titile {
   color: var(--main-black-color);
+  margin-bottom: 20px;
 }
 
 .benefits-titile {
   color: var(--main-black-color);
+  margin-bottom: 20px;
 }
+
 .benefits-after-title {
   font-size: 18px;
   line-height: 1.67;
@@ -348,19 +386,21 @@ body {
 
 /* Barbers*/
 
-#barbers {
-
-}
 .barbers {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
+
 .barbers-pre-title {
 }
 .pre-title {
   color: var(--main-black-color);
+  margin-bottom: 20px;
 }
 
 .barbers-title {
   color: var(--main-black-color);
+  margin-bottom: 44px;
 }
 
 .title {
